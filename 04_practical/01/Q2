@@ -1,0 +1,11 @@
+CLASS STACK:
+    DEF __INIT__(SELF):
+        SELF._DATA = []
+    DEF PUSH(SELF, ITEM):
+        SELF.STACK.APPEND(ITEM)
+    DEF POP(SELF):
+        return SELF.STACK.POP() IF not SELF.IS_EMPTY() ELSE None
+    def peek(self):
+        return self.stack[-1] if not self.is_empty() else None
+    DEF IS_EMPTY(SELF):
+        return len(SELF.STACK) == 0
